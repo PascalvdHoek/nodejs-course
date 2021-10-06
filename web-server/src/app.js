@@ -80,6 +80,7 @@ app.get('/api/weather', (req, res) => {
           location: data.location.name,
           forecast: data.current.weather_descriptions,
           forecast_image: data.current.weather_icons,
+          data,
           name: 'Pascal',
         });
       }
